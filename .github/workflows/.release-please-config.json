@@ -1,0 +1,67 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "simple",
+      "package-name": "galri",
+      "changelog-path": "CHANGELOG.md",
+      "bump-minor-pre-major": true,
+      "bump-patch-for-minor-pre-major": true,
+      "initial-version": "0.0.0",
+      "changelog-sections": [
+        {
+          "type": "feat",
+          "section": "✨ Nouvelles fonctionnalités",
+          "hidden": false
+        },
+        {
+          "type": "fix",
+          "section": "🐛 Corrections de bugs",
+          "hidden": false
+        },
+        {
+          "type": "perf",
+          "section": "⚡️ Améliorations de performance",
+          "hidden": false
+        },
+        {
+          "type": "refactor",
+          "section": "♻️ Refactoring",
+          "hidden": false
+        },
+        {
+          "type": "docs",
+          "section": "📚 Documentation",
+          "hidden": false
+        },
+        {
+          "type": "test",
+          "section": "🧪 Tests",
+          "hidden": true
+        },
+        {
+          "type": "build",
+          "section": "🏗️ Build",
+          "hidden": true
+        },
+        {
+          "type": "ci",
+          "section": "🔄 CI/CD",
+          "hidden": true
+        },
+        {
+          "type": "chore",
+          "section": "🧹 Maintenance",
+          "hidden": false
+        },
+        {
+          "type": "style",
+          "section": "💅 Style",
+          "hidden": true
+        }
+      ],
+      "draft": false,
+      "prerelease": false,
+      "include-v-in-tag": true
+    }
+  }
+}
