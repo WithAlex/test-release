@@ -1,0 +1,38 @@
+name: Send Changelog to Discord
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  send-changelog-to-discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Get release information
+        id: release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const release = await github.rest.repos.getRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              release_id: context.payload.release.id
+            });
+            return {
+              tag_name: release.data.tag_name,
+              body: release.data.body
+            };
+
+      - name: Format and send to Discord
+        uses: Ilshidur/action-discord@master
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        with:
+          args: |
+            **Nouvelle Release**: ${{ steps.release.outputs.result.tag_name }}
+            
+            **Changelog**:
+            ${{ steps.release.outputs.result.body }}
