@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.0.1](https://github.com/WithAlex/test-release/compare/galri-v0.0.0...galri-v0.0.1) (2025-03-18)
+
+
+### ✨ Nouvelles fonctionnalités
+
+* Create test.txt ([5c1c35a](https://github.com/WithAlex/test-release/commit/5c1c35a774165d8c977129cd32843725d82efdc2))
+* **OU:** Update README.md ([9c431c4](https://github.com/WithAlex/test-release/commit/9c431c46bb22fdb199839932384327bc0caa200a))
+
+
+### 🐛 Corrections de bugs
+
+* hot Update version.txt ([8c37a4a](https://github.com/WithAlex/test-release/commit/8c37a4aace007d3f8d4797c13263d22c50045704))
+* hot Update version.txt ([cac978b](https://github.com/WithAlex/test-release/commit/cac978b547fc8208fb9273fe6ee79582f9ae9c2c))
+* Update version.txt ([6c037f0](https://github.com/WithAlex/test-release/commit/6c037f0f5aa2752c3046734a153c1f0bfe87b36b))
+
 ## 0.0.0 (2025-03-18)
 
 
