@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.1.1](https://github.com/WithAlex/test-release/compare/v0.1.0...v0.1.1) (2025-03-19)
+
+
+### ✨ Nouvelles fonctionnalités
+
+* nouvelle feature ([1f2c692](https://github.com/WithAlex/test-release/commit/1f2c69258ed8ed190769872d29ccafbc0cdb0982))
+
+
+### 🐛 Corrections de bugs
+
+* bug ([0ae0476](https://github.com/WithAlex/test-release/commit/0ae0476bfb074c31b3510e9690bd227ceda592e9))
+* prod ([#3](https://github.com/WithAlex/test-release/issues/3)) ([a874f35](https://github.com/WithAlex/test-release/commit/a874f357df5e6e42fcf2d0b6df2a7b7836ce6dbf))
+
+
+### 🧹 Maintenance
+
+* release ([ebbb962](https://github.com/WithAlex/test-release/commit/ebbb962c767d160b6b20b1073c750008c9d0fd88))
+
 ## [0.1.0](https://github.com/WithAlex/test-release/compare/v0.0.1...v0.1.0) (2025-03-19)
 
 
