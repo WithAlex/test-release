@@ -5,34 +5,34 @@ on:
     types: [published]
 
 jobs:
-  send-changelog-to-discord:
+  send-changelog:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Get release information
-        id: release
-        uses: actions/github-script@v7
+        uses: actions/checkout@v3
         with:
-          script: |
-            const release = await github.rest.repos.getRelease({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              release_id: context.payload.release.id
-            });
-            return {
-              tag_name: release.data.tag_name,
-              body: release.data.body
-            };
+          ref: ${{ github.event.release.tag_name }}
 
-      - name: Format and send to Discord
+      - name: Read CHANGELOG.md
+        id: changelog
+        run: |
+          CHANGELOG=$(cat CHANGELOG.md)
+          CHANGELOG="${CHANGELOG//'%'/'%25'}"
+          CHANGELOG="${CHANGELOG//$'\n'/'%0A'}"
+          CHANGELOG="${CHANGELOG//$'\r'/'%0D'}"
+          echo "content=$CHANGELOG" >> $GITHUB_OUTPUT
+
+      - name: Send to Discord
         uses: Ilshidur/action-discord@master
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         with:
           args: |
-            **Nouvelle Release**: ${{ steps.release.outputs.result.tag_name }}
-            
-            **Changelog**:
-            ${{ steps.release.outputs.result.body }}
+            🚀 **Nouvelle Release**: ${{ github.event.release.tag_name }}
+
+            **Changelog:**
+            ```md
+            ${{ steps.changelog.outputs.content }}
+            ```
+
+            [Voir la release sur GitHub](${{ github.event.release.html_url }})
