@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.3](https://github.com/WithAlex/test-release/compare/v0.1.2...v0.1.3) (2025-03-19)
+
+
+### 🐛 Corrections de bugs
+
+* bump-patch-for-minor-pre-major to false ([65b9269](https://github.com/WithAlex/test-release/commit/65b9269c8575b94e0a390502382143c3a42c6132))
+* fix ([0981a85](https://github.com/WithAlex/test-release/commit/0981a85e719d2fdc861fe71085a1667ed95a7759))
+* hotfix ([#7](https://github.com/WithAlex/test-release/issues/7)) ([0440a6c](https://github.com/WithAlex/test-release/commit/0440a6c168fe298d2015cebd8c8f625ba7374469))
+
 ## [0.1.2](https://github.com/WithAlex/test-release/compare/v0.1.1...v0.1.2) (2025-03-19)
 
 
