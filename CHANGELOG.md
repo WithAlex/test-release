@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.1](https://github.com/WithAlex/test-release/compare/v0.0.0...v0.0.1) (2025-03-19)
+
+
+### 🧹 Maintenance
+
+* remove discord ([a204a56](https://github.com/WithAlex/test-release/commit/a204a56f884c408bd879236ccd6f8cb7be64f3e1))
+
 ## 0.0.0 (2025-03-19)
 
 
